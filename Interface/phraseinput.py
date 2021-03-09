@@ -22,6 +22,15 @@ def interpolate(opcode, phrase):
         
         if "Thank" in phrase:
             return(res.formulateResponse(4,name))
+        
+        if "What is your favourite food" in phrase:
+            return(res.fomulateResponse(5,name))
+        
+        if "It is nice weather today" in phrase:
+            return(res.fomulateResponse(6,name))
+        
+        if "Do you have any hobbies?" in phrase:
+            return(res.fomulateResponse(7,name))
 
         else :
             return(res.formulateResponse(0,""))
