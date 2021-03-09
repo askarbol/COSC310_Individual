@@ -18,3 +18,13 @@ def formulateResponse(code, val):
 
     elif code == 4:
         return("1Robert: You're welcome, " + val + "!\n")
+    
+    elif code == 5:
+        return("1Robert: Burger " + val + "!\n")
+    
+    elif code == 6:
+        return("1Robert: It forecasts rain " + val + "!\n")
+    
+    elif code == 7:
+        return("1Robert: I play soccer sometimes " + val + "!\n")
+    
