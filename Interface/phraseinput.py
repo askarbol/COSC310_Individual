@@ -31,6 +31,15 @@ def interpolate(opcode, phrase):
         
         if "Do you have any hobbies?" in phrase:
             return(res.fomulateResponse(7,name))
+        
+        if "Which is your favourite sport?" in phrase: 
+            return (res.formulateResponse(8,name))
+        
+        if "Which team or club do you support?" in phrase:
+            return (res.formulateResponse(9,name))
+        
+        if "Is there any player that you’re a fan of?" in phrase: 
+            return (res.formulateResponse(10,name))
 
         else :
             return(res.formulateResponse(0,""))
