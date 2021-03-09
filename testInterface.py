@@ -1,7 +1,7 @@
 from tkinter import *
 from Interface import phraseinput as pi
 
-opcode = 1
+opcode = 0
 
 root = Tk() 
 root.geometry("400x600") 
@@ -19,7 +19,7 @@ def Take_input():
         OUTPUT = response[1:] 
         Output.insert(END, OUTPUT)
 
-l = Label(text = "Robot Robert")
+l = Label(text = "Robot Robert", font='Helvetica 18 bold')
 
 Output = Text(root, height = 18,  
               width = 40,  

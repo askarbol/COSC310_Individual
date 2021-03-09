@@ -13,12 +13,15 @@ def interpolate(opcode, phrase):
         name = phrase
         return(res.formulateResponse(2, phrase))
 
-    else:    
-        if "Hello" in phrase:
-            return(res.formulateResponse(1,""))
+    elif int(opcode) == 0:
+        return(res.formulateResponse(1, ""))
 
-        elif "What's my name" in phrase:
+    else:    
+        if "What's my name" in phrase:
             return(res.formulateResponse(3,name))
-            
+        
+        if "Thank" in phrase:
+            return(res.formulateResponse(4,name))
+
         else :
             return(res.formulateResponse(0,""))
