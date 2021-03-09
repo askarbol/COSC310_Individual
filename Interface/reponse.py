@@ -28,3 +28,16 @@ def formulateResponse(code, val):
     elif code == 7:
         return("1Robert: I play soccer sometimes " + val + "!\n")
     
+    elif code == 8: 
+        return ("1Robert: Football" + val+ ".\n")
+    
+    elif code == 9: 
+       return ("1Robert:  Chelsea FC " + val+ "!\n")
+    
+    elif code ==10: 
+        return ("1Robert: Yeah! Frank Lampard" + val + ".\n")
+
+    
+
+    
+   
