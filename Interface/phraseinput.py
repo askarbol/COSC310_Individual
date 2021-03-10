@@ -59,7 +59,7 @@ def interpolate(opcode, phrase):
         if "Which country are you from" in phrase: 
             return (res.formulateResponse (16, name)) 
         
-         if "What is your name?" in phrase: 
+        if "What is your name?" in phrase: 
             return (res.formulateResponse (17,name))
         
         if "I love you, Robert" in phrase: 
@@ -71,7 +71,35 @@ def interpolate(opcode, phrase):
         if "When did you learn English?" in phrase: 
             return (res.formulateResponse (20, name)) 
         
-
+        if "What is your goal in life?" in phrase: 
+            return (res.formulateResponse (21, name)) 
+        
+        if "When do you feel best? In the morning, afternoon, or evening?" in phrase: 
+            return (res.formulateResponse (22, name)) 
+        
+        if "Which do you prefer, sunrises or sunsets?" in phrase: 
+            return (res.formulateResponse (23, name)) 
+        
+        if "We should watch the sunrise together!" in phrase: 
+            return (res.formulateResponse (24, name)) 
+        
+        if "Would you like to be famous?" in phrase: 
+            return (res.formulateResponse (25, name)) 
+        
+        if "What’s your address?" in phrase: 
+            return (res.formulateResponse (26, name)) 
+        
+        if "What kind of people do you like?" in phrase: 
+            return (res.formulateResponse (27, name)) 
+        
+        if "What was the last book you read?" in phrase: 
+            return (res.formulateResponse (28, name)) 
+        
+        if "What do you do on Sundays?" in phrase: 
+            return (res.formulateResponse (29, name)) 
+        
+        if "Goodbye Robert!" in phrase: 
+            return (res.formulateResponse (30, name)) 
 
                     
                  
