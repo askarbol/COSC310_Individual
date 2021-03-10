@@ -40,6 +40,41 @@ def interpolate(opcode, phrase):
         
         if "Is there any player that you’re a fan of?" in phrase: 
             return (res.formulateResponse(10,name))
+        
+        if "Are you married or single?" in phrase: 
+            return(res.formulateResponse(11,name))
+                   
+        if "Do you like to cook?" in phrase: 
+            return (res.formulateResponse(12,name))
+        
+        if "How old are you?" in phrase: 
+            return (res.formulateResponse (13, name))
+        
+        if "What's your height?" in phrase: 
+            return (res.formulateResponse(14, name))
+        
+        if "Which countries have you visited?" in phrase: 
+            return (res.formulateResponse (15, name ))
+        
+        if "Which country are you from" in phrase: 
+            return (res.formulateResponse (16, name)) 
+        
+         if "What is your name?" in phrase: 
+            return (res.formulateResponse (17,name))
+        
+        if "I love you, Robert" in phrase: 
+            return (res.formulateResponse (18,name))
+        
+        if "What's your phone number?" in phrase: 
+            return (res.formulateResponse (19, name)) 
+        
+        if "When did you learn English?" in phrase: 
+            return (res.formulateResponse (20, name)) 
+        
+
+
+                    
+                 
 
         else :
             return(res.formulateResponse(0,""))
