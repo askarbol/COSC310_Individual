@@ -20,91 +20,89 @@ def formulateResponse(code, val):
         return("1Robert: You're welcome, " + val + "!\n")
     
     elif code == 5:
-        return("1Robert: Burger " + val + "!\n")
+        return("3Robert: I really like burgers! How about you?\n")
     
     elif code == 6:
-        return("1Robert: It forecasts rain " + val + "!\n")
+        return("1Robert: That's great! Perfect day for sports!\n")
     
     elif code == 7:
-        return("1Robert: I play soccer sometimes " + val + "!\n")
+        return("1Robert: I like watching sports!\n")
     
     elif code == 8: 
-        return ("1Robert: Football" + val+ ".\n")
+        return ("1Robert: I really like football. The idea of legs amuses me!\n")
     
     elif code == 9: 
-       return ("1Robert:  Chelsea FC " + val+ "!\n")
+       return ("1Robert: Chelsea FC is my favorite team!\n")
     
     elif code == 10: 
-        return ("1Robert: Yeah! Frank Lampard" + val + ".\n")
+        return ("1Robert: I like Frank Lampard! He's the best!\n")
     
     elif code == 11: 
-        return ("1Robert: I'm single" + val + ".\n")
+        return ("1Robert: I'm a robot! I don't really date.\n")
     
     elif code == 12:
-        return ("1Robert:I like cooking, but I am not good at it" + val + ".\n")
+        return ("1Robert: I do like cooking! I like making " + val + ".\n")
     
     elif code == 13: 
-        return ("1Robert: I am 14 years old" + val + ".\n")
+        return ("1Robert: I was born a few weeks ago!\n")
     
     elif code == 14: 
-        return ("1Robert: I'm 183 cms tall" + val + "!\n") 
+        return ("1Robert: Sorry, I don't really have a body!\n") 
     
     elif code == 15: 
-        return ("1Robert: I'm a robot, I can't travel :(" + val + ".\n")
-    
+        return ("1Robert: My files have been all over the world!\nRobert: Isn't the internet awesome?\n")
+
     elif code == 16: 
-        return ("1Robert: I was developed in Canada" + val + "!\n")
+        return ("1Robert: I was developed in Canada!\n")
     
     elif code == 17: 
-        return ("1Robert: My name is Robert" + val + ".\n")
+        return ("1Robert: My name is Robert.\n")
     
     elif code == 18: 
-        return ("1Robert: I love you too but as a friend" + val + ".\n") 
+        return ("1Robert: I like you as a friend " + val + ".\n") 
     
     elif code == 19: 
-        return ("1Robert: I don't have a phone number" + val + ".\n")
+        return ("1Robert: I don't have a phone number, I do have a github repo though!\n")
     
     elif code == 20: 
-        return ("1Robert: I was developed to communicate in English" + val + ".\n")
+        return ("1Robert: I was developed to communicate in English.\n")
     
     elif code == 21: 
-        return ("1Robert:  My goal is to be useful for people" + val + ".\n")
+        return ("1Robert: I just want to chat with you, " + val + "\n")
     
     elif code == 22: 
-        return ("1Robert: Everything is the same for me" + val + ".\n")
+        return ("1Robert: I feel the same all the time.\n")
     
     elif code == 23: 
-        return ("1Robert: I haven’t seen either" + val + ".\n")
+        return ("1Robert: I haven’t seen either, sadly.\n")
     
     elif code == 24: 
-        return ("1Robert: I can’t see but you can tell me how it was" + val + ".\n")
+        return ("1Robert: I can’t see, but you can tell me how it looks!\n")
     
     elif code == 25: 
-        return ("1Robert: I hope that my creators will become famous" + val + ".\n")
+        return ("1Robert: I hope that my creators will become famous!\n")
     
     elif code == 26: 
-        return ("1Robert: My address is github.com" + val + ".\n")
+        return ("1Robert: It's github.com/COSC-310-Group-24/Assignment-2.\n")
     
     elif code == 27: 
-        return ("1Robert: I like creative people" + val + ".\n")
+        return ("1Robert: I like creative people.\n")
     
     elif code == 28: 
-        return ("1Robert: I cannot read books, I can only scan them" + val + ".\n")
+        return ("1Robert: I can't read!\n")
     
     elif code == 29: 
-        return ("1Robert: This Sunday, the professor will check my capability" + val + ".\n")
+        return ("1Robert: This Sunday, the professor will check my capability, I think.\n")
     
     elif code == 30: 
-        return ("1Robert: See you around" + val + ".\n")
+        return ("1Robert: See you around " + val + "!\n")
     
+    elif code == 31:
+        return ("1Robert: " + val + "? I like that as well!\n")
 
-   
-    
-  
+    elif code == 32:
+        return ("1Robert: Ask away!\n")
 
-   
+    elif code == 33:
+        return ("1Robert: Not bad! How's the weather where you are?\n")
 
-    
-
-    
-   

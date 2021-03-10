@@ -5,9 +5,11 @@ from Interface import reponse as res
 ## matching in order to handle specific cases.
 
 name = None
+favoriteFood = None
 
 def interpolate(opcode, phrase):
     global name
+    global favoriteFood
 
     if int(opcode) == 2:
         name = phrase
@@ -16,93 +18,103 @@ def interpolate(opcode, phrase):
     elif int(opcode) == 0:
         return(res.formulateResponse(1, ""))
 
+    elif int(opcode) == 3:
+        favoriteFood = phrase
+        return(res.formulateResponse(31, phrase))
+
     else:    
         if "What's my name" in phrase:
             return(res.formulateResponse(3,name))
         
-        if "Thank" in phrase:
+        elif "Thank" in phrase:
             return(res.formulateResponse(4,name))
         
-        if "What is your favourite food" in phrase:
-            return(res.fomulateResponse(5,name))
+        elif "How are you" in phrase:
+            return(res.formulateResponse(33,""))
+
+        elif "What is your favorite food" in phrase:
+            return(res.formulateResponse(5,""))
         
-        if "It is nice weather today" in phrase:
-            return(res.fomulateResponse(6,name))
+        elif "It's nice today" in phrase:
+            return(res.formulateResponse(6,""))
         
-        if "Do you have any hobbies?" in phrase:
-            return(res.fomulateResponse(7,name))
+        elif "Do you have any hobbies" in phrase:
+            return(res.formulateResponse(7,""))
         
-        if "Which is your favourite sport?" in phrase: 
-            return (res.formulateResponse(8,name))
+        elif "What is your favorite sport" in phrase: 
+            return (res.formulateResponse(8,""))
         
-        if "Which team or club do you support?" in phrase:
-            return (res.formulateResponse(9,name))
+        elif "team do you support" in phrase:
+            return (res.formulateResponse(9,""))
         
-        if "Is there any player that you’re a fan of?" in phrase: 
-            return (res.formulateResponse(10,name))
+        elif "your favorite player" in phrase: 
+            return (res.formulateResponse(10,""))
         
-        if "Are you married or single?" in phrase: 
-            return(res.formulateResponse(11,name))
+        elif "Are you married" in phrase: 
+            return(res.formulateResponse(11,""))
+
+        elif "Are you single" in phrase: 
+            return(res.formulateResponse(11,""))
                    
-        if "Do you like to cook?" in phrase: 
-            return (res.formulateResponse(12,name))
+        elif "Do you like to cook?" in phrase: 
+            return (res.formulateResponse(12, favoriteFood))
         
-        if "How old are you?" in phrase: 
-            return (res.formulateResponse (13, name))
+        elif "How old are you" in phrase: 
+            return (res.formulateResponse (13,""))
         
-        if "What's your height?" in phrase: 
-            return (res.formulateResponse(14, name))
+        elif "How tall are you" in phrase: 
+            return (res.formulateResponse(14,""))
         
-        if "Which countries have you visited?" in phrase: 
-            return (res.formulateResponse (15, name ))
+        elif "countries have you visited?" in phrase: 
+            return (res.formulateResponse (15,""))
         
-        if "Which country are you from" in phrase: 
-            return (res.formulateResponse (16, name)) 
+        elif "Where are you from" in phrase: 
+            return (res.formulateResponse (16,"")) 
         
-        if "What is your name?" in phrase: 
-            return (res.formulateResponse (17,name))
+        elif "What is your name" in phrase: 
+            return (res.formulateResponse (17,""))
         
-        if "I love you, Robert" in phrase: 
+        elif "I love you, Robert" in phrase: 
             return (res.formulateResponse (18,name))
         
-        if "What's your phone number?" in phrase: 
-            return (res.formulateResponse (19, name)) 
+        elif "What's your phone number" in phrase: 
+            return (res.formulateResponse (19,"")) 
         
-        if "When did you learn English?" in phrase: 
-            return (res.formulateResponse (20, name)) 
+        elif "What languages do you speak" in phrase: 
+            return (res.formulateResponse (20,"")) 
         
-        if "What is your goal in life?" in phrase: 
+        elif "What is your goal in life" in phrase: 
             return (res.formulateResponse (21, name)) 
         
-        if "When do you feel best? In the morning, afternoon, or evening?" in phrase: 
-            return (res.formulateResponse (22, name)) 
+        elif "time of day do you feel best" in phrase: 
+            return (res.formulateResponse (22,"")) 
         
-        if "Which do you prefer, sunrises or sunsets?" in phrase: 
-            return (res.formulateResponse (23, name)) 
+        elif "sunrise or sunset" in phrase: 
+            return (res.formulateResponse (23,"")) 
         
-        if "We should watch the sunrise together!" in phrase: 
-            return (res.formulateResponse (24, name)) 
+        elif "I wish I could watch one with you" in phrase: 
+            return (res.formulateResponse (24,"")) 
         
-        if "Would you like to be famous?" in phrase: 
-            return (res.formulateResponse (25, name)) 
+        elif "Would you like to be famous" in phrase: 
+            return (res.formulateResponse (25,"")) 
         
-        if "What’s your address?" in phrase: 
-            return (res.formulateResponse (26, name)) 
+        elif "what's your github?" in phrase: 
+            return (res.formulateResponse (26,"")) 
         
-        if "What kind of people do you like?" in phrase: 
-            return (res.formulateResponse (27, name)) 
+        elif "What kind of people do you like" in phrase: 
+            return (res.formulateResponse (27,"")) 
         
-        if "What was the last book you read?" in phrase: 
+        elif "last book you read" in phrase: 
             return (res.formulateResponse (28, name)) 
         
-        if "What do you do on Sundays?" in phrase: 
+        elif "What do you do on the weekend" in phrase: 
             return (res.formulateResponse (29, name)) 
         
-        if "Goodbye Robert!" in phrase: 
-            return (res.formulateResponse (30, name)) 
-
-                    
-                 
+        elif "Goodbye Robert" in phrase: 
+            return (res.formulateResponse (30, name))
+            
+        elif "Can I ask you some personal questions" in phrase: 
+            return (res.formulateResponse (32,"")) 
 
         else :
             return(res.formulateResponse(0,""))

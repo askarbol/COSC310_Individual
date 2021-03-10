@@ -4,7 +4,7 @@ from Interface import phraseinput as pi
 opcode = 0
 
 root = Tk() 
-root.geometry("400x600") 
+root.geometry("550x700") 
 root.resizable(width=False, height=False)
 root.title(" Robot Robert ")
 
@@ -22,11 +22,11 @@ def Take_input():
 l = Label(text = "Robot Robert", font='Helvetica 18 bold')
 
 Output = Text(root, height = 18,  
-              width = 40,  
+              width = 65,  
               bg = "white") 
 
 inputtxt = Text(root, height = 2, 
-                width = 40, 
+                width = 65, 
                 bg = "white") 
  
 Display = Button(root, height = 2, 
