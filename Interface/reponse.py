@@ -34,8 +34,46 @@ def formulateResponse(code, val):
     elif code == 9: 
        return ("1Robert:  Chelsea FC " + val+ "!\n")
     
-    elif code ==10: 
+    elif code == 10: 
         return ("1Robert: Yeah! Frank Lampard" + val + ".\n")
+    
+    elif code == 11: 
+        return ("1Robert: I'm single" + val + ".\n")
+    
+    elif code == 12:
+        return ("1Robert:I like cooking, but I am not good at it" + val + ".\n")
+    
+    elif code == 13: 
+        return ("1Robert: I am 14 years old" + val + ".\n")
+    
+    elif code == 14: 
+        return ("1Robert: I'm 183 cms tall" + val + "!\n") 
+    
+    elif code == 15: 
+        return ("1Robert: I'm a robot, I can't travel :(" + val + ".\n")
+    
+    elif code == 16: 
+        return ("1Robert: I was developed in Canada" + val + "!\n")
+    
+    elif code == 17: 
+        return ("1Robert: My name is Robert" + val + ".\n")
+    
+    elif code == 18: 
+        return ("1Robert: I love you too but as a friend" + val + ".\n") 
+    
+    elif code == 19: 
+        return ("1Robert: I don't have a phone number" + val + ".\n")
+    
+    elif code == 20: 
+        return ("1Robert: I was developed to communicate in English" + val + ".\n")
+    
+        
+    
+   
+    
+  
+
+   
 
     
 
