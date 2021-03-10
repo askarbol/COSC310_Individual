@@ -67,8 +67,37 @@ def formulateResponse(code, val):
     elif code == 20: 
         return ("1Robert: I was developed to communicate in English" + val + ".\n")
     
-        
+    elif code == 21: 
+        return ("1Robert:  My goal is to be useful for people" + val + ".\n")
     
+    elif code == 22: 
+        return ("1Robert: Everything is the same for me" + val + ".\n")
+    
+    elif code == 23: 
+        return ("1Robert: I haven’t seen either" + val + ".\n")
+    
+    elif code == 24: 
+        return ("1Robert: I can’t see but you can tell me how it was" + val + ".\n")
+    
+    elif code == 25: 
+        return ("1Robert: I hope that my creators will become famous" + val + ".\n")
+    
+    elif code == 26: 
+        return ("1Robert: My address is github.com" + val + ".\n")
+    
+    elif code == 27: 
+        return ("1Robert: I like creative people" + val + ".\n")
+    
+    elif code == 28: 
+        return ("1Robert: I cannot read books, I can only scan them" + val + ".\n")
+    
+    elif code == 29: 
+        return ("1Robert: This Sunday, the professor will check my capability" + val + ".\n")
+    
+    elif code == 30: 
+        return ("1Robert: See you around" + val + ".\n")
+    
+
    
     
   
