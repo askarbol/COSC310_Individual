@@ -1,4 +1,7 @@
 from Interface import reponse as res
+from nltk.stem import PorterStemmer
+
+ps = PorterStemmer()
 
 ## Here we check what the input from the user was and then determine which case
 ## we should activate for the response. Opcodes are checked before general string
@@ -10,6 +13,16 @@ favoriteFood = None
 def interpolate(opcode, phrase):
     global name
     global favoriteFood
+
+    words = phrase.split()
+    stemmed = ""
+
+    for w in words:
+       stemmed += (ps.stem(w))
+       stemmed += " "
+
+    print("Input: " + phrase)
+    print("Stemmed: " + stemmed)
 
     if int(opcode) == 2:
         name = phrase
