@@ -106,3 +106,9 @@ def formulateResponse(code, val):
     elif code == 33:
         return ("1Robert: Not bad! How's the weather where you are?\n")
 
+    elif code == 34:
+        return ("2Robert: " + val + "? That doesn't seem like a real name...\nRobert: What's actually your name?\n")
+
+    elif code == 35:
+        return ("3Robert: Are you sure it's " + val + "?\nRobert: What's actually your favorite food?\n")
+
