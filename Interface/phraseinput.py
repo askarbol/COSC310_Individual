@@ -34,11 +34,11 @@ def getPOS(e):
     return sent[0][1]
 
 
-def getTeam(ex):
+def getTeam(ex, check):
     ne_tree = nltk.ne_chunk(pos_tag(word_tokenize(ex)))
     for n in ne_tree:
         if hasattr(n, 'label'):
-            if n.label() == 'ORGANIZATION':
+            if n.label() == check:
                 name = (' '.join(c[0] for c in n))
     if name != None:
         return name
@@ -81,7 +81,7 @@ def interpolate(opcode, e):
             return(res.formulateResponse(35, e))
 
     elif int(opcode) == 4:
-        team = getTeam(e)
+        team = getTeam(e, 'ORGANIZATION')
         if team == 'N/A': return (res.formulateResponse(36))
         elif psStem("don't watch hockey") in phrase: return (res.formulateResponse(37))
         else: return (res.formulateResponse(38, team))

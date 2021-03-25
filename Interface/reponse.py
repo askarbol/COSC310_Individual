@@ -35,7 +35,7 @@ def formulateResponse(code, val):
        return ("4Robert: The Edmonton Oilers are my favorite team! What's yours?\n")
     
     elif code == 10: 
-        return ("1Robert: I like Frank Lampard! He's the best!\n")
+        return ("1Robert: I like Connor McDavid! He's the best!\n")
     
     elif code == 11: 
         return ("1Robert: I'm a robot! I don't really date.\n")
