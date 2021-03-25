@@ -14,8 +14,14 @@ class TestSum(unittest.TestCase):
     def testPOS2(self):
         self.assertNotEqual(pi.getPOS("Walking"), 'NN', "Expected: Not Equal")
 
+    def testNER(self):
+        self.assertEqual(pi.getTeam('I really like the Edmonton Oilers, they rock!'), 'Edmonton Oilers', "Expected: Edmonton Oilers")
+
     def testName(self):
         self.assertEqual(pi.interpolate(2, "Marcus"), "1Robert: Marcus? That's a good name!\n" , "Expected: 1Robert: Marcus? That's a good name!\n")
+
+    def testResonse(self):
+        self.assertEquals(res.formulateResponse(2, "TestCase"), "1Robert: TestCase? That's a good name!\n" , "Expected: 1Robert: TestCase? That's a good name!\n")
 
 
 if __name__ == '__main__':

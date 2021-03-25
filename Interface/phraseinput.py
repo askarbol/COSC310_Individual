@@ -1,6 +1,9 @@
 from Interface import reponse as res
 import nltk
+from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
+from nltk.tag import pos_tag
+from nltk.chunk import conlltags2tree, tree2conlltags
 ps = PorterStemmer()
 
 ## Here we check what the input from the user was and then determine which case
@@ -29,6 +32,22 @@ def getPOS(e):
     ## of speech code for the first word (NN: Singular Noun, NNS: Plural Noun etc.)
     ## list of codes can be found at https://medium.com/@gianpaul.r/tokenization-and-parts-of-speech-pos-tagging-in-pythons-nltk-library-2d30f70af13b
     return sent[0][1]
+
+
+def getTeam(ex):
+    ne_tree = nltk.ne_chunk(pos_tag(word_tokenize(ex)))
+    for n in ne_tree:
+        if hasattr(n, 'label'):
+            if n.label() == 'ORGANIZATION':
+                name = (' '.join(c[0] for c in n))
+    if name != None:
+        return name
+    else:
+        return 'N/A'
+    ## This function takes in a sentence and isolates an organization, should it exist.
+    ## It assumes there is only one organization in the sentence.
+    ## Otherwise, it returns 'N/A'. Other possible checks include:
+    ## FACILITY, GPE, GSP, LOCATION, ORGANIZATION, PERSON
 
 
 ## To increase modularity of the system, we have the input recogniton
