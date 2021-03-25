@@ -80,6 +80,12 @@ def interpolate(opcode, e):
         else:
             return(res.formulateResponse(35, e))
 
+    elif int(opcode) == 4:
+        team = getTeam(e)
+        if team == 'N/A': return (res.formulateResponse(36))
+        elif psStem("don't watch hockey") in phrase: return (res.formulateResponse(37))
+        else: return (res.formulateResponse(38, team))
+
     ## If we've exhausted the possible opcodes, just check for string matching.
     else:    
         if psStem("What's my name") in phrase:
