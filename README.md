@@ -1,4 +1,4 @@
-# COSC 310 Assignment 2
+# COSC 310 Assignment 3 (I know the reposity is named 2, we used the same one)
 
 ![Cute lil robot!](https://upload.wikimedia.org/wikipedia/commons/7/75/Kawaii_robot_power_clipart.svg)
 
