@@ -21,7 +21,7 @@ This program is meant to be a simple chatbot capable of 30 rounds of semi-natura
 <sub><sup>**IMAGE CREDIT**</sub></sup><br>
 <sub><sup>"File:Kawaii robot power clipart.svg" by Mvolz is marked under CC0 1.0.</sub></sup>
 
-![POS](images/pos.png "Demonstration of POS tagging")
-![NER](images/ner.png "Demonstration of Named Entity Recognition")
-![STEM](images/stem.png "Demonstration of Porter Stemmer")
-![GUI](images/gui.png "Demonstration of GUI")
+![POS](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/pos.png?raw=true "Demonstration of POS tagging")
+![NER](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/ner.png?raw=true "Demonstration of Named Entity Recognition")
+![STEM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/stem.png?raw=true "Demonstration of Porter Stemmer")
+![GUI](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/gui.png?raw=true "Demonstration of GUI")
