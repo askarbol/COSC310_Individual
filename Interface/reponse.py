@@ -29,13 +29,13 @@ def formulateResponse(code, val):
         return("1Robert: I like watching sports!\n")
     
     elif code == 8: 
-        return ("1Robert: I really like football. The idea of legs amuses me!\n")
+        return ("1Robert: I really like hockey. The idea of legs amuses me!\n")
     
     elif code == 9: 
-       return ("1Robert: Chelsea FC is my favorite team!\n")
+       return ("4Robert: The Edmonton Oilers are my favorite team! What's yours?\n")
     
     elif code == 10: 
-        return ("1Robert: I like Frank Lampard! He's the best!\n")
+        return ("1Robert: I like Connor McDavid! He's the best!\n")
     
     elif code == 11: 
         return ("1Robert: I'm a robot! I don't really date.\n")
@@ -105,4 +105,19 @@ def formulateResponse(code, val):
 
     elif code == 33:
         return ("1Robert: Not bad! How's the weather where you are?\n")
+
+    elif code == 34:
+        return ("2Robert: " + val + "? That doesn't seem like a real name...\nRobert: What's actually your name?\n")
+
+    elif code == 35:
+        return ("3Robert: Are you sure it's " + val + "?\nRobert: What's actually your favorite food?\n")
+
+    elif code == 36:
+        return ("4Robert: Hmmm, that doesn't seem like a hockey team...\nRobert: What's actually your favorite team?\n")
+    
+    elif code == 37:
+        return ("1Robert: Oh, okay! Let's talk about something else then!\n")
+
+    elif code == 38:
+        return ("1Robert: You like the " + val + "? Awesome!\n")
 
