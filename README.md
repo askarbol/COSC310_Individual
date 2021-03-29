@@ -21,8 +21,12 @@ This program is meant to be a simple chatbot capable of 30 rounds of semi-natura
 - A simple GUI via Python's Tkinter functionality.
 > The title explains it pretty well, this allows the user to input conversation in a more standard setting. This also allows the user to look back through chat history.
 
+- More varried responses when the agent doesn't understand.
+> In order to make the program a bit more dynamic, it can now randomly pick from one of five error sentences instead of just the one.
+
 
 ![POS](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/pos.png?raw=true "Demonstration of POS tagging")
 ![NER](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/ner.png?raw=true "Demonstration of Named Entity Recognition")
 ![STEM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/stem.png?raw=true "Demonstration of Porter Stemmer")
 ![GUI](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/gui.png?raw=true "Demonstration of GUI")
+![RANDOM](https://github.com/COSC-310-Group-24/Assignment-2/blob/main/Images/random.png?raw=true "Demonstration of Responses")
