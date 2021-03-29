@@ -1,3 +1,4 @@
+from random import randint
 
 ## This function takes the deciphered input from phraseInput.interpolate and a single variable 
 ## which can be used in the response. Returns a string in the correct format for output.
@@ -5,7 +6,14 @@
 def formulateResponse(code, val):
 
     if code == 0:
-        return("1Robert: Sorry, I don't understand.\n")
+        x = randint(0, 4)
+        if x is 0: return("1Robert: Sorry, I don't understand.\n")
+        if x is 1: return("1Robert: I didn't catch that, sorry!\n")
+        if x is 2: return("1Robert: Woopsie, I don't know what you mean...\n")
+        if x is 3: return("1Robert: Hmmmm... I don't know what that means.\n")
+        if x is 4: return("1Robert: Could you try again? I didn't understand that.\n")
+
+        
 
     elif code == 1:
         return("2Robert: Hello! Nice to meet you!\nRobert: What's your name?\n")

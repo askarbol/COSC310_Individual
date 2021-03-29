@@ -121,7 +121,7 @@ def interpolate(opcode, e):
         elif psStem("Are you single") in phrase: 
             return(res.formulateResponse(11,""))
                    
-        elif psStem("Do you like to cook?") in phrase: 
+        elif psStem("Do you like to cook") in phrase: 
             return (res.formulateResponse(12, favoriteFood))
         
         elif psStem("How old are you") in phrase: 
@@ -130,7 +130,7 @@ def interpolate(opcode, e):
         elif psStem("How tall are you") in phrase: 
             return (res.formulateResponse(14,""))
         
-        elif psStem("countries have you visited?") in phrase: 
+        elif psStem("countries have you visited") in phrase: 
             return (res.formulateResponse (15,""))
         
         elif psStem("Where are you from") in phrase: 
@@ -163,7 +163,7 @@ def interpolate(opcode, e):
         elif psStem("Would you like to be famous") in phrase: 
             return (res.formulateResponse (25,"")) 
         
-        elif psStem("what's your github?") in phrase: 
+        elif psStem("what's your github") in phrase: 
             return (res.formulateResponse (26,"")) 
         
         elif psStem("What kind of people do you like") in phrase: 
