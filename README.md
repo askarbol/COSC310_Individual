@@ -7,7 +7,14 @@
 
 **CHATBOT PROGRAM**
 
-This program is meant to be a simple chatbot capable of 30 rounds of semi-natural speech. This was initally done via simple phrase recognition but has been upgraded to use python's natural language toolkit. Implemented features include:
+This program is meant to be a simple chatbot capable of 30 rounds of semi-natural speech. This was initally done via simple phrase recognition but has been upgraded to use python's natural language toolkit. This individual part of the project adds two new API's to make conversation flow better. The two APIs that I chose are WikipediaAPI and Google Translate API.
+
+## Individual project APIs
+Wikipedia API: When user types "Search" + any word, Robot Robert return first two sentences from wikipedia of that word. For example, if user types in "Search ocean", Robert will print: The ocean (also the sea or the world ocean) is the body of salt water which covers approximately 71% of the surface of the Earth.[1] It is also "any of the large bodies of water into which the great ocean is divided.
+
+GoogleTranslate API: Translates user's input from different language supported by google translate to english.
+
+![Wiki](https://github.com/askarbol/COSC310_Individual/blob/main/Images/wiki.png)
 
 - Misspelling handling via Porter Stemmer.
 > Program stems user input and checks against stemmed sentences on the backend, allowing the system to handle minor gramatical errors.
