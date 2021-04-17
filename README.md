@@ -1,4 +1,4 @@
-# COSC 310 Assignment 3 (I know the repository is named 2, we used the same one)
+# COSC 310 Individual Project
 
 ![Cute lil robot!](https://upload.wikimedia.org/wikipedia/commons/7/75/Kawaii_robot_power_clipart.svg)
 
@@ -16,6 +16,7 @@ GoogleTranslate API: Translates user's input from different language supported b
 
 ![Wiki](https://github.com/askarbol/COSC310_Individual/blob/main/Images/wiki.png)
 
+## Features added for Assignment 3
 - Misspelling handling via Porter Stemmer.
 > Program stems user input and checks against stemmed sentences on the backend, allowing the system to handle minor gramatical errors.
 
